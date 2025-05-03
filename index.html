@@ -1,124 +1,186 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8" />
-  <title>Hoja de vida</title>
+    <meta charset="UTF-8" />
+    <title>Hoja de vida - Julián Andrés Pérez</title><!--Agregue un título a la hoja de vida-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"><!--Este es el link de la fuente de iconos-->
+    <link rel="stylesheet" href="estilos.css" /><!--Este es el link de la hoja de los estilos-->
 </head>
-
 <body>
+    <div class="contenedor"> <!--Agregue un div con una clase llamada "contenedor"-->
+        <header class="cabecera">
+            <div class="contenedor_foto_perfil">
+                <img src="img/fotohv.jpg" alt="Foto de perfil Julián Andrés Pérez"> </div> <!--Utilice la etiqueta img para la foto de perfil-->
+            <div class="profesion">
+                <h1>Julián Andrés Pérez</h1>
+                <h2>Administrador de empresas</h2>
+                 </div>     
+                 <nav class="navegacion-principal"> <!--Agregue una barra de navegación -->
+                    <ul><!--Utilice una lista desordenada para los enlaces de la barra de navegación-->
+                      <li><a href="#experiencia">Experiencia</a></li>
+                      <li><a href="#perfil_Profesional">Perfil</a></li>
+                      <li><a href="#formacion">Formación</a></li>
+                      <li><a href="#idiomas">Idiomas</a></li>
+                      <li><a href="#tecnologias">Tecnologías</a></li>
+                      <li><a href="#contacto">Contacto</a></li> 
+                      <li><a href="#formulario-contacto">Formulario</a></li>
+                    </ul>  
+                 </nav>                
+        </header>
 
-  <header>
-    <h1>Julián Andrés Pérez</h1>
-    <p><strong>Profesión o título:</strong> Administrador de empresas</p>
-    <h2>Datos de contacto</h2>
-    <p><strong>Correo electrónico:</strong> jandresporejuela@gmail.com</p>
-    <p><strong>Teléfono:</strong> 3012505983</p>
-    <h4>Palmira, Valle del Cauca</h4>
-  </header>
+        <div class="contenido_cv">
 
-  <nav>
-    <ul>
-      <li><a href="#experiencia">Experiencia profesional</a></li>
-      <li><a href="#perfil_Profesional">Perfil profesional</a></li>
-      <li><a href="#idiomas">Idiomas</a></li>
-      <li><a href="#tecnologias">Tecnologías</a></li>
-      <li><a href="#formulario">Formulario de contacto</a></li>
-    </ul>
-  </nav>
+            <aside class="barralateral"><!--Agregue un aside para la barra lateral-->
 
-  <section id="experiencia">
-    <h2>Experiencia Profesional</h2>
-    <ul>
-      <li><a href="https://www.celsia.com/es/" target="_blank">Celsia Energía</a></li>
-    </ul>
-  </section>
+                <section id="perfil_Profesional">
+                    <h3><i class="fas fa-user"></i> Perfil Profesional</h3><!--Con i traje el icono de font awesome-->
+                    <hr>
+                    <br>
+                    <p class="perfilprofesional"><!--Utilice la etiqueta p para escribir el perfil profesional-->
+                        Joven proactivo con formación en Administración de Empresas y destacadas
+                        competencias en el manejo de tecnologías y software. Experiencia en el
+                        área comercial, con capacidad para desarrollar ideas innovadoras y tomar
+                        decisiones efectivas. Enfocado en la mejora continua, con iniciativa y
+                        creatividad para trabajar en equipo y optimizar procesos.
+                    </p>
+                </section>
+                <br>
 
-  <section id="perfil_Profesional">
-    <h2>Perfil Profesional</h2>
-    <p>
-      Joven proactivo con formación en Administración de Empresas y destacadas competencias en el manejo de tecnologías y software. Experiencia en el área comercial, con capacidad para desarrollar ideas innovadoras y tomar decisiones efectivas. Enfocado en la mejora continua, con iniciativa y creatividad para trabajar en equipo y optimizar procesos.
-    </p>
-  </section>
+                <section id="idiomas">
+                     <h3><i class="fa-solid fa-earth-americas"></i> Idiomas</h3>
+                    <hr>
+                    <br>
+                    <table><!--Cree una tabla para los idiomas-->
+                        <thead> <tr><!--Defini tr para cada fila de la tabla-->
+                                <th>Idioma</th><!--Agregue th para el encabezado de la tabla-->
+                                <th>Nivel</th>
+                            </tr>
+                        </thead>
+                            <tr>
+                                <td>Inglés</td>
+                                <td>B1</td><!--Agregue un td para el contenido de cada fila de la tabla-->
+                            </tr>
+                            <tr>
+                                <td>Chino Mandarín</td>
+                                <td>HSK1</td>
+                            </tr>
+                            <tr>
+                                <td>Español</td>
+                                <td>Nativo</td>
+                            </tr>
+                    </table>
+                </section>
+                <br>
 
+                <section id="tecnologias">
+                     <h3><i class="fa-solid fa-desktop"></i> Tecnologías</h3>
+                    <hr>
+                    <br>
+                    <table><!--Cree una tabla para las tecnologías-->
+                        <thead>
+                            <tr>
+                                <th>Tecnología</th>
+                                <th>Nivel</th>
+                            </tr>
+                        </thead>
+                            <tr>
+                                <td>HTML</td>
+                                <td>Básico</td>
+                            </tr>
+                            <tr>
+                                <td>CSS</td>
+                                <td>Básico</td>
+                            </tr>
+                            <tr>
+                                <td>Python</td>
+                                <td>Básico</td>
+                            </tr>
+                            <tr>
+                                <td>Javascript</td>
+                                <td>Básico</td>
+                            </tr>
+                    </table>
+                </section>
+                <br>
 
-  <section id="idiomas">
-    <h2>Idiomas</h2>
-    <table border="1">
-      <tr>
-        <th>Idiomas</th>
-        <th>Nivel</th>
-      </tr>
-      <tr>
-        <td>Ingles</td>
-        <td>B1</td>
-      </tr>
-      <tr>
-        <td>Chino Mandarin</td>
-        <td>HSK1</td>
-      </tr>
-      <tr>
-        <td>Español</td>
-        <td>Nativo</td>
-      </tr>
-    </table>
-  </section>
+                <section id="contacto">
+                    <h3><i class="fas fa-envelope"></i> Contacto</h3>
+                    <hr>
+                    <br>
+                    <ul><!--Cree una lista para los datos de contacto-->
+                        <li><i class="fas fa-envelope-open-text"></i> <a href="mailto:jandresporejuela@gmail.com">Correo: jandresporejuela@gmail.com</a> </li><!--Agregue un enlace para que rediriga a la aplicacion predeterminada de email-->
+                        <li><i class="fas fa-phone"></i><a href="tel:+573012505983">Teléfono: 3012505983</a></li><!--Agregue un enlace para que rediriga a la aplicacion predeterminada de telefono-->
+                        <li><i class="fas fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/VHkdAyT4T4MyYbfb8" target="_blank">Ubicación: Palmira, Valle del Cauca</a><!--Agregue un enlace para que rediriga a google maps-->
+                        </li>
+                        </ul>
+                </section>
 
-<section id="tecnologías">
-  <h2>Tecnologías</h2>
-  <table border="1">
-    <tr>
-      <th>Tecnologías</th>
-      <th>Nivel</th>
-    </tr>
-    <tr>
-      <td>HTML</td>
-      <td>Basico</td>
-    </tr>
-    <tr>
-      <td>CSS</td>
-      <td>Basico</td>
-    </tr>
-    <tr>
-      <td>Python</td>
-      <td>Basico</td>
-    </tr>
-    <tr>
-      <td>Javascript</td>
-      <td>Basico</td>
-    </tr>
+            </aside> <main class="contenido_principal"><!--Agregue un main para el contenido principal-->
 
-  </table>
+                <section id="experiencia">
+                     <h3><i class="fas fa-briefcase"></i> Experiencia Profesional</h3>
+                    <hr>
+                    <br>
+                    <article class="experiencia-item">
+                        <h4>Practicante Sena</h4> <div class="nombre_empresa"><a href="https://www.celsia.com/es/" target="_blank">Celsia Energía</a></div><!--Agregue un enlace para que rediriga a la pagina de la empresa-->
+                        <div class="año_puesto">2017 - 2018</div> <p class="descripcion_puesto">
+                            Apoyo en el análisis de datos comerciales, elaboración de informes,
+                            participación en la optimización de procesos del área, manejo de CRM, etc.
+                        </p>
+                    </article>
+                    <br>
+                </section>
+                
+                <section id="formacion">
+                    <h3><i class="fas fa-graduation-cap"></i> Formación Académica</h3>
+                    <hr>
+                    <br>
+                     <article class="formacion-item">
+                        <h4>Administrador de Empresas</h4>
+                        <div class="nombre_institucion"><a href="https://www.palmira.unal.edu.co/" target="_blank">Universidad Nacional de Colombia - Sede Palmira</a></div><!--Agregue un enlace para que rediriga a la pagina de la universidad-->
+                        <div class="año_formacion">2019 - 2025</div> </article>
+                     <br>
+                </section>
 
-</section><br>
+                 <section id="formulario-contacto">
+                    <h3><i class="fas fa-paper-plane"></i> Formulario de Contacto</h3>
+                    <hr>
+                    <br>
+                    <form action="#" method="post"> <fieldset><!--La etiqueta de form para crear un formulario, como metodo adicione el post para mayor seguridad-->
+                             <label for="asunto">Asunto</label><br><!--Agregue un label para cada campo del formulario-->
+                            <input type="text" id="asunto" name="asunto" required><br>
 
-<section id="formulario">
-  <form>
-  <fieldset>
-  <legend><h2>Formulario de contacto</h2></legend>
-  <label>Asunto</label><br>
-  <input type="text" required><br>
-  <label>Nombre</label><br>
-  <input type="text" placeholder="Pepito Perez" required><br>
-  <label>Email</label><br>
-  <input type="email" placeholder="pepitoperez@tech.com" required><br>
-  <label>Telefono</label><br>
-  <input type="number" placeholder="3112223344" required><br>
-  <label>Mensaje</label><br>
-  <textarea name="message" rows="10" cols="30" placeholder="Escribe tu mensaje." required></textarea><br>
-  <input type="datetime-local"><br><br>
-  <label>Pais</label>
-    <select>
-      <option>Argentina</option>
-      <option>Colombia</option>
-      <option>Chile</option>
-      <option>Venezuela</option> 
-    </select> <br><br>
-  <input type="submit" value="Enviar"> <input type="reset" value="Borrar"> 
-  </fieldset>
-  </form>
+                            <label for="nombre">Nombre</label><br>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required><br><!--Agregue un placeholder para cada campo del formulario-->
 
-</section>
-   
-</body>
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" name="email" placeholder="tu@correo.com" required><br>
+
+                            <label for="telefono">Teléfono</label><br>
+                            <input type="tel" id="telefono" name="telefono" placeholder="3112223344" pattern="[0-9]*"required><br><!--Agregue un pattern para que solo acepte números-->
+
+                            <label for="mensaje">Mensaje</label><br>
+                            <textarea id="mensaje" name="mensaje" rows="8" cols="30" placeholder="Escribe tu mensaje." required></textarea><br><!--Agregue un textarea para el mensaje-->
+
+                            <label for="pais">País</label><br>
+                            <select id="pais" name="pais">
+                                <option>Argentina</option>
+                                <option selected>Colombia</option><!--Utilice selected para que el país Colombia aparezca por defecto-->
+                                <option>Chile</option>
+                                <option>Venezuela</option>
+                                <option>Perú</option>
+                                <option>Uruguay</option>
+                                <option>Paraguay</option>
+                                <option>Bolivia</option>
+                                </select>
+                            <br><br>
+                            <input type="submit" value="Enviar"><!--Input type submit para enviar el formulario-->
+                            <input type="reset" value="Borrar"><!--Input type reset para borrar el formulario-->
+                        </fieldset>
+                    </form>
+                </section>
+            </main> 
+        </div>
+     </div> 
+    </body>
 </html>
