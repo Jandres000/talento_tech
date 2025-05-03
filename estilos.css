@@ -1,0 +1,385 @@
+/* Importar la fuente Ubuntu */
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: #333;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 3% 0;
+}
+
+/* Contenedor Principal */
+.contenedor {
+  background-color: #2c3041; /* Fondo oscuro principal */
+  color: #ffffff; /* Texto blanco*/
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+  width: 85%; /* Ancho del CV */
+  max-width: 1200px; /* Ancho máximo */
+  margin: 0 auto; /* Centrar el contenedor */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Cabecera */
+.cabecera {
+  position: relative;
+  padding: 40px 5%; /* Espaciado interno */
+  background-color: #1e2230; /* Un color de fondo por si la imagen falla */
+}
+
+.cabecera::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/fondo.png"); /* Imagen de fondo */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.25; /* Opacidad de la imagen de fondo */
+  z-index: 1; /* Detras del contenido */
+}
+
+.contenedor_foto_perfil {
+  width: 180px; /* Tamaño de la foto */
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  border: 6px solid #41a090; /* Borde verde */
+  margin-right: 30px; /* Espacio entre foto y texto */
+  box-shadow: 0px 0px 20px rgb(251 251 251 / 22%); /* Sombra con el color del borde */
+  position: relative; /* Para que esté sobre el ::before */
+  z-index: 2;
+}
+
+.contenedor_foto_perfil img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra el circulo sin distorsionarse */
+  display: block;
+}
+
+.profesion {
+  display: inline-block;
+  vertical-align: middle;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  position: relative; /* Para que este sobre el ::before */
+  z-index: 2;
+}
+
+.profesion h1 {
+  font-size: 3em; /* Tamaño del nombre */
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.profesion h2 {
+  font-size: 1.6em; /* Tamaño del título/profesión */
+  font-weight: 400;
+  opacity: 0.8;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+/* Estilos para la Navegación */
+.cabecera .navegacion-principal {
+  display: block; /* Agregue para que asegure su propia linea debajo del nombre */
+  width: 100%; /* Ocupa todo el ancho */
+  text-align: center; /* Centra los elementos de la lista */
+  margin-top: 25px; /* Espacio arriba, separándolo del título */
+  padding-bottom: 10px; /* Un poco de espacio abajo antes del contenido */
+  position: relative; /* Agregue para que esté sobre el fondo ::before */
+  z-index: 2;
+}
+
+.cabecera .navegacion-principal ul {
+  list-style: none; /* Quita los puntos de la lista */
+  padding: 0;
+  margin: 0;
+}
+
+.cabecera .navegacion-principal ul li {
+  display: inline-block; /* Coloque los elementos en línea horizontal */
+  margin: 0 12px; /* Espacio horizontal entre cada elemento */
+}
+
+.cabecera .navegacion-principal ul li a {
+  display: inline-block; /* Permite aplicar padding */
+  color: #ffffff; /* Texto blanco */
+  text-decoration: none; /* Quita el subrayado */
+  font-size: 0.95em; /* Tamaño de fuente */
+  font-weight: 400;
+  padding: 8px 15px;
+  border-radius: 4px; /* Bordes poco redondeados */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transicion para el hover */
+}
+
+/* Hover */
+.cabecera .navegacion-principal ul li a:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.15
+  ); /* Fondo blanco semitransparente al pasar el mouse */
+  color: #f0f0f0;
+}
+
+/* Contenido CV  */
+.contenido_cv {
+  display: flex;
+  width: 100%;
+}
+
+/*  Barra lateral */
+.barralateral {
+  background-color: #41a090; /* Fondo verde */
+  padding: 30px;
+  width: 35%; /* Ancho de la barra lateral */
+  color: #ffffff; /* Texto blanco */
+}
+
+.barralateral section {
+  margin-bottom: 30px;
+}
+
+.barralateral h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5); /* Línea divisoria  */
+  display: flex; /* Para alinear icono y texto */
+  align-items: center;
+}
+
+.barralateral hr {
+  display: none;
+}
+
+.barralateral p,
+.barralateral li {
+  font-size: 0.95em;
+  line-height: 1.6;
+  text-align: justify; /* Justificar perfil */
+}
+
+.barralateral ul {
+  list-style: none;
+  padding-left: 0;
+}
+.barralateral #contacto li {
+  margin-bottom: 10px; /* Espacio entre items de contacto */
+  display: flex;
+  align-items: center;
+  text-align: left; /* Alinee texto a la izquierda en contacto */
+}
+.barralateral #contacto li i {
+  margin-right: 10px; /* Espacio entre icono de contacto y texto */
+  /* Quite el estilo circular para los iconos de contacto */
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  color: #ffffff;
+  font-size: 1.1em;
+}
+.barralateral #contacto a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.barralateral #contacto a:hover {
+  color: #f0f0f0;
+}
+
+/* Estilo Iconos */
+.barralateral h3 i {
+  font-size: 0.8em; /* Tamaño relativo al h3 */
+  color: #41a090; /* Icono verde */
+  background: #ffffff; /* Fondo blanco */
+  border-radius: 50%; /* Círculo */
+  padding: 4px; /* Espaciado interno */
+  width: 1.6em; /* Ancho del círculo */
+  height: 1.6em; /* Alto del círculo */
+  text-align: center;
+  line-height: 1.2em; /* Centrado vertical */
+  margin-right: 10px; /* Espacio a la derecha del icono */
+  flex-shrink: 0; /* Evita que el icono se reduzca */
+}
+
+/* Contenido principal */
+.contenido_principal {
+  background-color: #2c3041; /* Mismo fondo que el contenedor general */
+  padding: 30px;
+  width: 65%; /* Ancho del contenido principal */
+  color: #ffffff;
+}
+
+.contenido_principal section {
+  margin-bottom: 30px; /* Espacio entre secciones */
+}
+
+.contenido_principal h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #41a090; /* Linea divisoria verde */
+  text-align: left; /* Alinear títulos a la izquierda */
+  display: flex; /* Para alinear icono y texto */
+  align-items: center;
+}
+.contenido_principal hr {
+  display: none; /* Ocultamos los <hr> */
+}
+
+.contenido_principal h4 {
+  font-size: 1.2em;
+  color: #d0baf6; /* Color lila */
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.contenido_principal .nombre_empresa,
+.contenido_principal .nombre_institucion {
+  font-weight: bold;
+  display: block; /* Que ocupe su línea */
+  margin-bottom: 3px;
+}
+.contenido_principal .nombre_empresa a,
+.contenido_principal .nombre_institucion a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.contenido_principal .nombre_empresa a:hover,
+.contenido_principal .nombre_institucion a:hover {
+  text-decoration: underline;
+}
+
+.contenido_principal .año_puesto,
+.contenido_principal .año_formacion {
+  font-size: 0.9em;
+  opacity: 0.7;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.contenido_principal .descripcion_puesto,
+.contenido_principal .descripcion_formacion {
+  font-size: 0.95em;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Estilo iconos contenido principal */
+.contenido_principal h3 i {
+  font-size: 0.8em;
+  color: #ffffff; /* Icono blanco */
+  background: #41a090; /* Fondo verde */
+  border-radius: 50%;
+  padding: 5px;
+  width: 1.6em;
+  height: 1.6em;
+  text-align: center;
+  line-height: 1.2em;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+/* Estilos para Tablas (Idiomas, Tecnologías) */
+.barralateral table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.barralateral th,
+.barralateral td {
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Borde gris transparentes */
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.barralateral th {
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo cabecera tabla */
+  font-weight: bold;
+}
+
+.barralateral tr:nth-child(even) td {
+  /* Filas pares un poco más oscuras */
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el Formulario  */
+#formulario-contacto fieldset {
+  border: 1px solid #41a090; /* Borde verde */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#formulario-contacto label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+#formulario-contacto input[type="text"],
+#formulario-contacto input[type="email"],
+#formulario-contacto input[type="tel"],
+#formulario-contacto textarea,
+#formulario-contacto select {
+  width: 100%; /* Ocupar todo el ancho disponible */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #444; /* Borde oscuro */
+  background-color: #3a3f51;
+  color: #ffffff; /* Texto blanco */
+  border-radius: 4px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.95em;
+}
+#formulario-contacto input::placeholder,
+#formulario-contacto textarea::placeholder {
+  color: #aaa; /* Color del placeholder */
+  opacity: 1;
+}
+
+#formulario-contacto input[type="submit"],
+#formulario-contacto input[type="reset"] {
+  background-color: #41a090; /* Botón verde */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#formulario-contacto input[type="reset"] {
+  background-color: #666; /* Botón de borrar gris */
+}
+
+#formulario-contacto input[type="submit"]:hover {
+  background-color: #d0baf6; /* Lila al pasar el mouse */
+}
+#formulario-contacto input[type="reset"]:hover {
+  background-color: #888; /* Gris más claro al pasar el mouse */
+}
